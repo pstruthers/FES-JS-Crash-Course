@@ -1,2 +1,2 @@
-console.log('Paige' / 5)
-console.log(Math.sqrt(-25))
+console.log(5 < 10) /* returns true */
+console.log(5 > 10) /* returns false */
