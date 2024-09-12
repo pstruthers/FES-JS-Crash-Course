@@ -1,2 +1,2 @@
-let str = 'Paige'
-console.log(str[str.length - 1])
+console.log('Paige' / 5)
+console.log(Math.sqrt(-25))
