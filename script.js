@@ -1,1 +1,2 @@
-console.log('Paige'[0])
+let str = 'Paige'
+console.log(str[str.length - 1])
