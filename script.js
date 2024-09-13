@@ -1,7 +1,4 @@
-let count = 1
-
-/* print the numbers 1 - 100 */
-while (count <= 100) {
-    console.log(count)
-    count = count + 1
+/* print numbers 1 - 100 */
+for (let i = 0; i < 100; i++) {
+    console.log(i + 1)
 }
