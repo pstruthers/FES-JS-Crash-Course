@@ -17,15 +17,7 @@ let users = [
     }
 ]
 
-function register({username, email, password, subscriptionStatus, discordID, lessonsCompleted}) {
-    let user = {
-        username: username,
-        email: email,
-        password: password,
-        subscriptionStatus: subscriptionStatus,
-        discordID: discordID,
-        lessonsCompleted: lessonsCompleted
-    }
+function register(user) {
     users.push(user)
 }
 
