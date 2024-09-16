@@ -1,9 +1,10 @@
-let dollars = [1, 5, 10, 3]
-
-let cents = []
-
-for (let i = 0; i < dollars.length; i++) {
-    cents.push(dollars[i] * 100)
+let user = {
+    username: 'Paige',
+    email: 'paige.struthers@gmail.com',
+    subscriptionStatus: 'VIP',
+    discordId: 'Paige#0001',
+    lessonsCompleted: [0, 1, 2],
 }
 
-console.log(cents) //prints [100, 500, 1000, 300]
+console.log(user.username) //prints Paige
+console.log(user.subscriptionStatus) //prints VIP
