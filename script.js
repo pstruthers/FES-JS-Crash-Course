@@ -1,1 +1,1 @@
-document.querySelector('#title').innerHTML = 'Frontend Simplified'
+document.querySelector('#title').innerHTML += 'Frontend Simplified'
