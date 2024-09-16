@@ -27,9 +27,10 @@ function login(email, password) {
             else {
                 console.log('login failed - the details are incorrect')
             }
+            return
         }
     }
-    
+    console.log('account does not exist - email could not be found')
 }
 
-login('paige.struthers@gmail.com', 'test123')
+login('asdfas@gmail.com', 'test123')
