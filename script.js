@@ -17,20 +17,27 @@ let users = [
     }
 ]
 
-function login(email, password) {
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].email === email) {
-            console.log(users[i])
-            if (users[i].password === password) {
-                console.log('log the user in - the details are correct')
-            }
-            else {
-                console.log('login failed - the details are incorrect')
-            }
-            return
-        }
+function register({username, email, password, subscriptionStatus, discordID, lessonsCompleted}) {
+    let user = {
+        username: username,
+        email: email,
+        password: password,
+        subscriptionStatus: subscriptionStatus,
+        discordID: discordID,
+        lessonsCompleted: lessonsCompleted
     }
-    console.log('account does not exist - email could not be found')
+    users.push(user)
 }
 
-login('asdfas@gmail.com', 'test123')
+register(
+    {
+        username: 'John',
+        email: 'john.doe@gmail.com',
+        password: 'john1234',
+        subscriptionStatus: 'VIP',
+        discordID: 'John#0001',
+        lessonsCompleted: [0, 1, 2, 3]
+    }
+)
+
+console.log(users)
