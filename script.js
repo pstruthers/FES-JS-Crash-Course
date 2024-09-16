@@ -1,9 +1,5 @@
-/* Function definition */
-function welcomePersonToFES(name) {
-    console.log(`Welcome to FES, ${name}`)
+function sumOfTwoNumbers(num1, num2) { /* num1 and num2 are the parameters */
+    return num1 + num2
 }
 
-/* Calling the function */
-welcomePersonToFES('Paige')
-welcomePersonToFES('David')
-welcomePersonToFES('Zen')
+console.log(sumOfTwoNumbers(10, 15)) /* 10 and 15 are the arguments */
