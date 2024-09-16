@@ -1,11 +1,14 @@
-let grades = ['A+', 'A', 'FAIL']
+let arr = [1, 4, 9, 16]
 
-let goodGrades = []
+/* long version */
+let newArray = arr.map((element) => {
+    console.log(element)
+    return 'dog'
+})
 
-for (let i = 0; i < grades.length; i++) {
-    if (grades[i] !== 'FAIL') {
-        goodGrades.push(grades[i])
-    }
-}
+/* shorthand version */
+let newArrayShort = arr.map(element => 'dog')
 
-console.log(goodGrades)
+// both print ['dog', 'dog', 'dog', 'dog']
+console.log(newArray)
+console.log(newArrayShort)
