@@ -1,35 +1,5 @@
-let users = [
-    {
-        username: 'Paige',
-        email: 'paige.struthers@gmail.com',
-        password: 'test123',
-        subscriptionStatus: 'VIP',
-        discordID: 'Paige#0001',
-        lessonsCompleted: [0, 1]
-    },
-    {
-        username: 'David',
-        email: 'david@frontendsimplified.com',
-        password: 'FES!',
-        subscriptionStatus: 'VIP',
-        discordID: 'David Bragg#0001',
-        lessonsCompleted: [0, 1, 2, 3, 4]
-    }
-]
+// First way of accessing an element
+console.log(document.querySelector('#title'))
 
-function register(user) {
-    users.push(user)
-}
-
-register(
-    {
-        username: 'John',
-        email: 'john.doe@gmail.com',
-        password: 'john1234',
-        subscriptionStatus: 'VIP',
-        discordID: 'John#0001',
-        lessonsCompleted: [0, 1, 2, 3]
-    }
-)
-
-console.log(users)
+// Second way of accessing an element (only works if element has an ID)
+console.log(document.getElementById('title'))
