@@ -1,7 +1,7 @@
-const convertCelsiusToFahrenheit = (celsius) => {
-    return celsius * 1.8 + 32
-}
+let arr = [20, 30, 40, 50, 100]
 
-console.log(convertCelsiusToFahrenheit(0)) //prints 32
-console.log(convertCelsiusToFahrenheit(10)) //prints 50
-console.log(convertCelsiusToFahrenheit(30)) //prints 86
+// First element of array:
+console.log(arr[0])
+
+// Last element of array:
+console.log(arr[arr.length - 1])
