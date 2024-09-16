@@ -1,14 +1,13 @@
-let arr = [1, 4, 9, 16]
+let dollars = [1, 5, 10, 3]
 
 /* long version */
-let newArray = arr.map((element) => {
-    console.log(element)
-    return 'dog'
+let cents = dollars.map((element) => {
+    return element * 100
 })
 
-/* shorthand version */
-let newArrayShort = arr.map(element => 'dog')
+/* short version */
+let centsShort = dollars.map(element => element * 100)
 
-// both print ['dog', 'dog', 'dog', 'dog']
-console.log(newArray)
-console.log(newArrayShort)
+//both print [100, 500, 1000, 300]
+console.log(cents)
+console.log(centsShort)
