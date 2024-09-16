@@ -1,13 +1,9 @@
 let dollars = [1, 5, 10, 3]
 
-/* long version */
-let cents = dollars.map((element) => {
-    return element * 100
-})
+let cents = []
 
-/* short version */
-let centsShort = dollars.map(element => element * 100)
+for (let i = 0; i < dollars.length; i++) {
+    cents.push(dollars[i] * 100)
+}
 
-//both print [100, 500, 1000, 300]
-console.log(cents)
-console.log(centsShort)
+console.log(cents) //prints [100, 500, 1000, 300]
