@@ -1,3 +1,5 @@
+const statusRef = document.querySelector(".status");
+
 // Creating a new promise
 function getSubscriptionStatus() {
   return new Promise((resolve, reject) => {
@@ -5,12 +7,10 @@ function getSubscriptionStatus() {
   });
 }
 
-// Accessing promise using .then()
-getSubscriptionStatus().then((response) => console.log(response)); // no need to use .json() since it's not coming from backend
-
 // Accessing promise using async/await
 async function main() {
-  console.log(await getSubscriptionStatus());
+  const status = await getSubscriptionStatus();
+  statusRef.innerHTML = status;
 }
 
 main();
